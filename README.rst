@@ -3,10 +3,10 @@
     :target: https://music-bi-agent-poc.readthedocs.io/en/latest/
     :alt: Documentation Status
 
-.. image:: https://github.com/MacHu-GWU/music_bi_agent_poc-project/actions/workflows/main.yml/badge.svg
+.. .. image:: https://github.com/MacHu-GWU/music_bi_agent_poc-project/actions/workflows/main.yml/badge.svg
     :target: https://github.com/MacHu-GWU/music_bi_agent_poc-project/actions?query=workflow:CI
 
-.. image:: https://codecov.io/gh/MacHu-GWU/music_bi_agent_poc-project/branch/main/graph/badge.svg
+.. .. image:: https://codecov.io/gh/MacHu-GWU/music_bi_agent_poc-project/branch/main/graph/badge.svg
     :target: https://codecov.io/gh/MacHu-GWU/music_bi_agent_poc-project
 
 .. image:: https://img.shields.io/pypi/v/music-bi-agent-poc.svg
@@ -26,7 +26,7 @@
 
 ------
 
-.. image:: https://img.shields.io/badge/Link-API-blue.svg
+.. .. image:: https://img.shields.io/badge/Link-API-blue.svg
     :target: https://music-bi-agent-poc.readthedocs.io/en/latest/py-modindex.html
 
 .. image:: https://img.shields.io/badge/Link-Install-blue.svg
