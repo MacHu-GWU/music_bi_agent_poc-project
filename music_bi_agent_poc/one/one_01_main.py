@@ -3,12 +3,14 @@
 from .one_02_aws import AwsMixin
 from .one_03_agent import AgentMixin
 from .one_04_sql import SqlMixin
+from .one_05_rag import RagMixin
 
 
 class One(
     AwsMixin,
     AgentMixin,
     SqlMixin,
+    RagMixin,
 ):
     pass
 

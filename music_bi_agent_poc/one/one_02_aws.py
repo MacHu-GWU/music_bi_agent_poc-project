@@ -18,6 +18,10 @@ class AwsMixin:
         return BotoSesManager(profile_name="esc_app_dev_us_east_1")
 
     @cached_property
+    def s3vectors_client(self: "One"):
+        return self.bsm.get_client("s3vectors")
+
+    @cached_property
     def model(self: "One") -> strands.models.BedrockModel:
         return strands.models.BedrockModel(
             # model_id="us.amazon.nova-pro-v1:0",
@@ -37,6 +41,6 @@ class AwsMixin:
             bucket_name=self.vector_bucket.name,
             index_name="knowledge-base",
             data_type="float32",
-            dimension=768,  # Common dimension for many LLM embeddings
+            dimension=384,  # Common dimension for many LLM embeddings
             distance_metric="cosine",
         )

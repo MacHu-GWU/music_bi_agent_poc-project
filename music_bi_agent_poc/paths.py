@@ -56,6 +56,11 @@ class PathEnum:
 
     # App
     path_sqlite = dir_project_root / "chinook.sqlite"
+    path_prompts_sql_agent = dir_package / "prompts" / "sql_agent.md"
+
+    path_knowledge_base_txt = (
+        dir_project_root / "genai" / "tmp" / "all_in_one_knowledge_base.txt"
+    )
 
 
 path_enum = PathEnum()
