@@ -13,7 +13,7 @@ if T.TYPE_CHECKING:  # pragma: no cover
 
 class AgentMixin:
     @strands.tool
-    def sql_assistant(self: "One", query: str) -> str:
+    def sql_assistant(self, query: str) -> str:
         """
         SQL database analysis assistant for querying the Chinook music store database.
 
@@ -40,7 +40,7 @@ class AgentMixin:
         return str(response)
 
     @strands.tool
-    def knowledge_assistant(self: "One", query: str) -> str:
+    def knowledge_assistant(self, query: str) -> str:
         """
         Knowledge base retrieval assistant for project documentation and codebase information.
 

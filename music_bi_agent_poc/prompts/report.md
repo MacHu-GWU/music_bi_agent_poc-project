@@ -266,7 +266,7 @@ The Genre table in the Chinook database contains:
 
 **Relationships:**
 - Linked to `Track` table via `Track.GenreId` foreign key
-- Sales are calculated by joining Genre ’ Track ’ InvoiceLine ’ Invoice
+- Sales are calculated by joining Genre ï¿½ Track ï¿½ InvoiceLine ï¿½ Invoice
 
 **Source:** Database schema defined in `chinook.sqlite`, query logic in `music_bi_agent_poc/one/one_02_sql.py`
 ```
