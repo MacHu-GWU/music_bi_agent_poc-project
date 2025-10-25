@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from .one.api import one
-from rich import print as rprint
 
 
 def run_agent(user_input: str) -> str:
@@ -9,6 +8,7 @@ def run_agent(user_input: str) -> str:
     Multi-agent orchestration workflow for handling user queries.
 
     This function implements a two-tier agent architecture:
+
     1. Router Agent: Analyzes the query and delegates to specialized agents (SQL, Knowledge)
     2. Report Agent: Synthesizes all intermediate results into a polished final answer
 
@@ -17,8 +17,10 @@ def run_agent(user_input: str) -> str:
     :return: Final synthesized answer as a string
 
     Workflow:
-        User Query → Router Agent (with sql_assistant & knowledge_assistant tools)
-                  → Report Agent → Final Answer
+        User Query
+        -> Router Agent (with sql_assistant & knowledge_assistant tools)
+        -> Report Agent
+        -> Final Answer
     """
     # Step 1: Router Agent orchestrates and delegates to specialists
     # The router analyzes the query and decides:
