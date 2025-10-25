@@ -16,6 +16,7 @@ class PathEnum:
     resolution across different execution contexts and DevOps workflows.
     """
 
+    # fmt: off
     @cached_property
     def dir_home(self):
         return Path.home()
@@ -57,11 +58,10 @@ class PathEnum:
     # App
     path_sqlite = dir_project_root / "chinook.sqlite"
     path_prompts_sql_agent = dir_package / "prompts" / "sql_agent.md"
+    path_prompts_knowledge = dir_package / "prompts" / "knowledge.md"
 
-    path_knowledge_base_txt = (
-        dir_project_root / "genai" / "tmp" / "all_in_one_knowledge_base.txt"
-    )
-
+    path_knowledge_base_txt = dir_project_root / "genai" / "tmp" / "all_in_one_knowledge_base.txt"
+    # fmt: on
 
 path_enum = PathEnum()
 """

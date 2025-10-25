@@ -83,9 +83,8 @@ class RagMixin:
             vectors=vectors,
         )
 
-    @strands.tool
     def retrieve(
-        self,
+        self: "One",
         query: str,
     ) -> list[str]:
         query_embedding = self.single_embedding(query)
@@ -102,3 +101,13 @@ class RagMixin:
             content = s3path.read_text(bsm=self.bsm)
             chunks.append(content)
         return chunks
+
+    @strands.tool
+    def retrieve_knowledge(
+        self,
+        query: str,
+    ) -> list[str]:
+        """
+
+        """
+        return self.retrieve(query=query)

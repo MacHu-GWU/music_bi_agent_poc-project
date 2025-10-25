@@ -3,7 +3,6 @@
 import typing as T
 from functools import cached_property
 
-from boto_session_manager import BotoSesManager
 import strands
 
 from mcp_ohmy_sql.config.api import (

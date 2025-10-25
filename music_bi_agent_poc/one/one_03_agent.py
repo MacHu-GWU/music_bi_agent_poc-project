@@ -53,11 +53,11 @@ class AgentMixin:
     def knowledge_agent(self: "One") -> strands.Agent:
         return strands.Agent(
             model=self.model,
-            system_prompt=(
-                ""
-            ),
+            system_prompt=path_enum.path_prompts_knowledge.read_text(),
             # callback_handler=None,
-            tools=[],
+            tools=[
+                self.retrieve_knowledge,
+            ],
         )
 
     @cached_property
