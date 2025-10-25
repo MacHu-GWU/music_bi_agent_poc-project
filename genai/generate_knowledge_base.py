@@ -5,13 +5,13 @@ Generate the AI knowledge base for the project.
 
 .. code-block:: bash
 
-    pip install "docpack>=0.1.2,<1.0.0"
+    pip install "docpack>=0.1.6,<1.0.0"
 """
 
 import shutil
 from pathlib import Path
 
-from music_bi_agent_poc.paths import dir_project_root, PACKAGE_NAME
+from music_bi_agent_poc.paths import path_enum, PACKAGE_NAME
 from docpack.api import GitHubPipeline
 
 dir_here = Path(__file__).absolute().parent
@@ -25,7 +25,7 @@ gh_pipeline = GitHubPipeline(
     account="MacHu-GWU",
     repo=f"{PACKAGE_NAME}-project",
     branch="main",
-    dir_repo=dir_project_root,
+    dir_repo=path_enum.dir_project_root,
     include=[
         f"{PACKAGE_NAME}/**/*.py",
         "tests/**/*.py",
