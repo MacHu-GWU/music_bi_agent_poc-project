@@ -54,6 +54,7 @@ dependencies = [
     "bedrock-agentcore-starter-toolkit>=0.1.26,<1.0.0",
     "mcp-ohmy-sql>=0.1.4,<1.0.0", # A powerful Model Context Protocol (MCP) server that provides universal SQL database connectivity with intelligent query optimization, schema introspection, and built-in safety features for AI assistants.
     "s3vectorm>=0.1.1,<1.0.0", # An efficient vector database built on AWS S3 and compatible with various embedding models.
+    "fastembed>=0.7.3,<1.0.0", # High-performance text embedding library supporting multiple models and frameworks.
     "vislog>=0.1.2,<1.0.0", # Visual Logging for Python Applications
 ]
 
