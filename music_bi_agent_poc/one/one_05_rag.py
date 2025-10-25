@@ -108,6 +108,36 @@ class RagMixin:
         query: str,
     ) -> list[str]:
         """
+        Retrieve relevant document chunks from the knowledge base using semantic search.
 
+        This tool searches through a comprehensive knowledge base containing project
+        documentation, source code, and repository information. It uses vector embeddings
+        to find the most semantically similar documents to your query.
+
+        :param query: Natural language query describing what information you need.
+                     Examples: "How to define an agent?", "Database schema information",
+                     "Which module handles SQL operations?"
+
+        :return: List of up to 5 most relevant XML-formatted document chunks. Each chunk
+                contains structured metadata including:
+                - source_type: Origin of the document (e.g., "GitHub Repository")
+                - github_url: Full URL to the source file
+                - account: GitHub account name
+                - repo: Repository name
+                - branch: Git branch name
+                - path: File path within the repository
+                - content: The actual document content
+
+        **Usage Tips:**
+        - Use specific, descriptive queries for better results
+        - Ask questions as you would naturally phrase them
+        - The search returns semantically similar content, not exact keyword matches
+        - Review multiple returned chunks as related information may span several documents
+
+        **Example Queries:**
+        - "Which Python module defines the agent and its prompt?"
+        - "How to configure database connections?"
+        - "What are the available API endpoints?"
+        - "Documentation about testing strategies"
         """
         return self.retrieve(query=query)
