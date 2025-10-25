@@ -5,6 +5,7 @@ from rich import print as rprint
 
 # one.prepare_knowledge_base()
 
+
 def example_1():
     user_input = """
     which python module defines the agent and it's prompt?
@@ -15,10 +16,17 @@ def example_1():
     )
     rprint(knowledge_agent_response)
 
+
 example_1()
 
-def example_2()
-# chunks = one.retrieve(query="which python module defines the agent and it's prompt?")
-# for ith, chunk in enumerate(chunks, start=1):
-#     print(f"===== {ith}th =====")
-#     print(chunk)
+
+def example_2():
+    chunks = one.retrieve(
+        query="which python module defines the agent and it's prompt?"
+    )
+    for ith, chunk in enumerate(chunks, start=1):
+        print(f"===== {ith}th =====")
+        print(chunk)
+
+
+example_2()

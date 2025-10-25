@@ -59,6 +59,8 @@ class PathEnum:
     path_sqlite = dir_project_root / "chinook.sqlite"
     path_prompts_sql_agent = dir_package / "prompts" / "sql_agent.md"
     path_prompts_knowledge = dir_package / "prompts" / "knowledge.md"
+    path_prompts_router = dir_package / "prompts" / "router.md"
+    path_prompts_report = dir_package / "prompts" / "report.md"
 
     path_knowledge_base_txt = dir_project_root / "genai" / "tmp" / "all_in_one_knowledge_base.txt"
     # fmt: on

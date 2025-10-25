@@ -16,20 +16,7 @@ class AgentMixin:
     def router_agent(self: "One") -> strands.Agent:
         return strands.Agent(
             model=self.model,
-            # system_prompt=(
-            #     ""
-            # ),
-            # callback_handler=None,
-            tools=[],
-        )
-
-    @cached_property
-    def metrics_agent(self: "One") -> strands.Agent:
-        return strands.Agent(
-            model=self.model,
-            # system_prompt=(
-            #     ""
-            # ),
+            system_prompt=path_enum.path_prompts_router.read_text(),
             # callback_handler=None,
             tools=[],
         )
@@ -64,9 +51,7 @@ class AgentMixin:
     def report_agent(self: "One") -> strands.Agent:
         return strands.Agent(
             model=self.model,
-            # system_prompt=(
-            #     ""
-            # ),
+            system_prompt=path_enum.path_prompts_report.read_text(),
             # callback_handler=None,
             tools=[],
         )
