@@ -9,13 +9,13 @@
 .. .. image:: https://codecov.io/gh/MacHu-GWU/music_bi_agent_poc-project/branch/main/graph/badge.svg
     :target: https://codecov.io/gh/MacHu-GWU/music_bi_agent_poc-project
 
-.. image:: https://img.shields.io/pypi/v/music-bi-agent-poc.svg
+.. .. image:: https://img.shields.io/pypi/v/music-bi-agent-poc.svg
     :target: https://pypi.python.org/pypi/music-bi-agent-poc
 
-.. image:: https://img.shields.io/pypi/l/music-bi-agent-poc.svg
+.. .. image:: https://img.shields.io/pypi/l/music-bi-agent-poc.svg
     :target: https://pypi.python.org/pypi/music-bi-agent-poc
 
-.. image:: https://img.shields.io/pypi/pyversions/music-bi-agent-poc.svg
+.. .. image:: https://img.shields.io/pypi/pyversions/music-bi-agent-poc.svg
     :target: https://pypi.python.org/pypi/music-bi-agent-poc
 
 .. image:: https://img.shields.io/badge/✍️_Release_History!--None.svg?style=social&logo=github
